@@ -1,4 +1,4 @@
 lib-rosedu
 ==========
 
-Bibilioteca online 
+Biblioteca online
