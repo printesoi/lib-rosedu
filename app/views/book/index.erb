@@ -1,0 +1,14 @@
+<div class="span-12">
+<table>
+	<tr>
+		<th> Carte </th>
+		<th> Info </th>
+	</tr>
+	<% @books.each do |b| %>
+	<tr>
+		<td> <%= b.title %> </td>
+		<td> <%= b.isbn %> </td>
+	</tr>
+	<% end %>
+</table>
+</div>
