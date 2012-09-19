@@ -7,6 +7,7 @@ LibRosedu::Application.routes.draw do
   # Keep in mind you can assign values other than :controller and :action
 
   match 'books' => 'book#index'
+  match 'add' => 'book#add'
 
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase

@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(:version => 20120912184825) do
   create_table "books", :force => true do |t|
     t.string   "title"
     t.string   "isbn"
+    t.string   "cover_link"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
