@@ -4,7 +4,7 @@ class CreateBooks < ActiveRecord::Migration
       t.string :title
       t.string :isbn
       t.string :cover_link
-      
+
       t.timestamps
     end
   end

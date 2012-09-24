@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120924202435) do
+ActiveRecord::Schema.define(:version => 20120924214349) do
 
   create_table "authors", :force => true do |t|
     t.string   "first_name"
@@ -31,6 +31,13 @@ ActiveRecord::Schema.define(:version => 20120924202435) do
     t.string   "cover_link"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "year"
+    t.string   "publishing_house"
+    t.integer  "edition",          :default => 0
+    t.integer  "pages"
+    t.integer  "total_count"
+    t.integer  "taken_count"
+    t.integer  "reserved_count"
   end
 
   create_table "books_categories", :id => false, :force => true do |t|
