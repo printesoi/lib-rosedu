@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121009172121) do
+ActiveRecord::Schema.define(:version => 20121009172253) do
 
   create_table "admins", :force => true do |t|
     t.string   "name"
@@ -63,7 +63,6 @@ ActiveRecord::Schema.define(:version => 20121009172121) do
   end
 
   create_table "loans", :force => true do |t|
-    t.integer  "user_id"
     t.integer  "book_id"
     t.datetime "taken_at"
     t.datetime "reserved_at"

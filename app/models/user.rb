@@ -3,4 +3,6 @@ class User < ActiveRecord::Base
     validates :last_name,  :presence => true
     validates :phone,      :presence => true
     validates :email,      :presence => true
+
+    has_more :loans
 end
