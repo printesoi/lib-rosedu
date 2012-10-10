@@ -8,8 +8,8 @@ LibRosedu::Application.routes.draw do
 
   resources :books
 
-  match 'books' => 'book#index'
-  match 'add' => 'book#add'
+  match 'books' => 'books#index'
+  match 'add' => 'books#add'
 
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
@@ -53,7 +53,7 @@ LibRosedu::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => "book#index"
+  root :to => "books#index"
 
   # See how all your routes lay out with "rake routes"
 

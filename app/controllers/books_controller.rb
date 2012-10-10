@@ -7,7 +7,8 @@ class BooksController < ApplicationController
         @books = Book.all
     end
 
-    def add
+    # Disable for the moment this action
+    #def add
         ## uses google api for books v1
 
         #http = Net::HTTP.new('www.googleapis.com', 443)
@@ -42,5 +43,5 @@ class BooksController < ApplicationController
         #b.author = @authors
         #b.isbn = @isbn
         #b.save
-    end
+    #end
 end
